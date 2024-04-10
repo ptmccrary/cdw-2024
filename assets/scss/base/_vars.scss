@@ -1,0 +1,28 @@
+@use "sass:math";
+
+$font-copy: Futura, sans-serif;
+$font-sans: Scheme, sans-serif;
+
+$black: #000;
+$white: #fff;
+
+$magenta: #e82176;
+$pink: #f05471;
+$blue-l: #00bbd3;
+$blue: #0094c8;
+$green-l: #a2d45e;
+$green: #009560;
+$purple-d: #1f1646;
+$purple-l: #9d2065;
+$orange: #ff9e18;
+$yellow: #f9e200;
+
+$pink-gradient: linear-gradient(to bottom, $magenta, $pink);
+$blue-gradient: linear-gradient(to bottom, $blue-l, $blue);
+$green-gradient: linear-gradient(to bottom, $green-l, $green);
+$purple-gradient: linear-gradient(to bottom, $purple-d, $purple-l);
+$orange-gradient: linear-gradient(to bottom, $orange, $yellow);
+
+:root {
+  --header-height: 70px;
+}

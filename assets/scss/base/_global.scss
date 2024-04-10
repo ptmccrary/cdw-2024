@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: $black;
+  font-family: $font-copy;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.35;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+.btn {
+  background: $purple-l;
+  color: $white;
+  padding: 10px 20px;
+  border-radius: 1000px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    background: $purple-d;
+  }
+}
+
+.page--explore {
+  &[data-has-active-section="true"] {
+    .landing-section[data-is-active="false"] {
+      .landing-section__inner {
+        align-items: flex-start;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 0;
+        margin-top: 60px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+}
